@@ -6,9 +6,9 @@
   "scripts": {
     "start": "node index/index.js",
     "develop": "npm-run-all --parallel watch-server watch-client",
-    "watch-server": "cd Server && npm run watch",
-    "install": "echo Installing Server dependencies && cd Server && npm i && echo Installing client dependencies && cd ../client && npm i --production=false && echo Installation complete",
-    "build": "cd client && npm run build",
+    "watch-server": "cd \"C:\\Users\\Milad\\Desktop\\Final Project\\Server\" && npm run watch",
+    "install": "echo Installing Server dependencies && cd \"C:\\Users\\Milad\\Desktop\\Final Project\\Server\" && npm i && echo Installing client dependencies && cd \"C:\\Users\\Milad\\Desktop\\Final Project\\client\" && npm i --production=false && echo Installation complete",
+    "build": "cd \"C:\\Users\\Milad\\Desktop\\Final Project\\client\" && npm run build",
     "render-build": "npm install && npm run build"
   },
   "keywords": [],
