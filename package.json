@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index/index.js",
-    "develop": "npm run watch --prefix Server & npm run dev --prefix client",
+    "develop": "npm-run-all --parallel watch-server watch-client",
+    "watch-server": "cd Server && npm run watch",
     "install": "echo Installing Server dependencies && cd Server && npm i && echo Installing client dependencies && cd ../client && npm i --production=false && echo Installation complete",
     "build": "cd client && npm run build",
     "render-build": "npm install && npm run build"
