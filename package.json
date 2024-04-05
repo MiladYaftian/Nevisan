@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index/index.js",
     "develop": "concurrently \"cd Server && npm run watch\" \"cd client && npm run dev\"",
-    "install": "cd Server && npm i && cd ../client && npm i --production=false",
+    "install": "echo Installing Server dependencies && cd Server && npm i && echo Installing client dependencies && cd ../client && npm i --production=false && echo Installation complete",
     "build": "cd client && npm run build",
     "render-build": "npm install && npm run build"
   },
