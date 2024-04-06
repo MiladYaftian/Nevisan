@@ -5,10 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
-    "prod": "NODE_ENV=production nodemon index.js",
-    "build": "cd client && npm run build",
-    "render-build": "npm install && npm run build"
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
